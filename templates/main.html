@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+{% for i in a %}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Автор: {{i}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Цитата: {{a[i]}}</h6>
+    <p class="card-text"></p>
+  </div>
+</div>
+<br>
+{% endfor %}
+<p></p>
+<a type="button" class="btn btn-primary" href="http://127.0.0.1:8089/create">Добавить цитату</a>
+</body>
+</html>
